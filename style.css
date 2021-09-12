@@ -14,32 +14,25 @@ html {
 }
 
 .picture {
-    width: 90%;
-    height: 95%;
+    width: 100vw;
+    height: auto;
     background-image: url(Pictures/businessCards/splendor2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: 5px 10px 10px 10px ;
+    /* box-shadow: 5px 10px 10px 10px ; */
     flex-direction: column;
 }
 
 #title {
-    /* position: fixed; */
-    /* margin-top: 600px; */
-    /* margin-left: 25px; */
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 5vw;
     display: flex;
     flex-direction: column;
 }
 
-.space {
-    width: 600px;
-    height: 600px;
-    background-color: white;
-}
-
 #title h1 {
-    color: black;
     font-size: 65px;
     font-weight: 200;
     margin: 0;
@@ -47,17 +40,51 @@ html {
 }
 
 #title h2 {
-    margin: 0;
+    margin: 0 30px;
     padding: 0;
     font-weight: 400;
 }
 
-#title h3 {
-    margin: 20px; 
+#title a {
+    margin: 20px 100px; 
     padding: 0; 
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
     font-weight: 200;
-    width: 150px;
+    width: 300px;
+    color: black;
+    text-decoration: none;
+}
+
+#title a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 300;
+}
+
+.menu ul li {
+    padding: 0 20px;
+    margin: 0;
+    border-left: 3px solid black;
+}
+
+,menu ul li:hover {
+    background-color: gray;
+}
+
+.menu ul li:last-child {
+    border-right: 3px solid black;
+} 
+
+
+
+.menu a {
+    text-decoration: none;
+    color: black;
 }
