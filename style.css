@@ -16,7 +16,7 @@ html {
 .picture {
     width: 100vw;
     height: auto;
-    background-image: url(Pictures/businessCards/splendor2.png);
+    background-image: url(Pictures/businessCards/mysplendor_cl1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,7 +26,7 @@ html {
 
 #title {
     position: absolute;
-    margin-top: 60vh;
+    margin-top: 55vh;
     margin-left: 5vw;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,12 @@ html {
 
 #title a:hover {
     background-color: rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 15px rgba(20, 75, 112, 0.95);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
 }
 
 .menu ul {
@@ -74,17 +80,90 @@ html {
     border-left: 3px solid black;
 }
 
-,menu ul li:hover {
-    background-color: gray;
+.menu ul li:hover {
+    /* background-color: rgb(238, 235, 235); */
+    background-color: rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 15px rgba(20, 75, 112, 0.95);
 }
 
 .menu ul li:last-child {
     border-right: 3px solid black;
 } 
 
-
+.menu ul li:first-child {
+    border-right: 3px solid black;
+}
 
 .menu a {
     text-decoration: none;
     color: black;
+}
+
+#sneer {
+    margin-right: auto;
+}
+
+#sneer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+a:visted {
+    text-decoration: none;
+    color: black;
+}
+
+@media (prefers-color-scheme: dark) { 
+    html {
+        background-color: rgb(44, 44, 44);
+    }
+    
+    .picture {
+        width: 100vw;
+        height: auto;
+        background-image: url(Pictures/businessCards/mysplendor_cl_invert1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        padding: 0 20px;
+        margin: 0;
+        border-left: 3px solid white;
+    }
+    
+    .menu ul li:last-child {
+        border-right: 3px solid white;
+    } 
+    
+    .menu a {
+        text-decoration: none;
+        color: white;
+    } 
+
+    #title {
+        color: white;
+    }
+
+    #title a {
+        color: white;
+        border: 2px solid white;
+    }
+
+    #sneer a {
+        color: white;
+    }
+
+    #sneer a:visted {
+        color: white;
+    }
+
+    .menu ul li:first-child {
+        border-right: 3px solid white;
+    }
 }
