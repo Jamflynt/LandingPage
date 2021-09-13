@@ -51,17 +51,30 @@ html {
     padding: 0; 
     text-align: center;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: 200;
     width: 20vw;
     color: black;
     text-decoration: none;
     font-size: 1vw;
+    letter-spacing: .1px;
+    box-shadow: 0 0 0 2px gainsboro;
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
 }
 
 #title a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
     text-shadow: 1px 1px 15px rgba(20, 75, 112, 0.95);
+    letter-spacing: 1.1px;
+    border-radius: 30px;
+    box-shadow: 0 0 0 5px transparent;
+}
+
+#title a:active {
+    transform: scale(0.9);
 }
 
 .menu {
@@ -161,8 +174,9 @@ a:visted {
     }
 
     #title a:hover {
-        background-color: rgba(161, 188, 206, 0.5);
-    }
+        background-color: white;
+        color: black;
+        }
 
     .menu ul li:first-child {
         border-right: 3px solid white;
