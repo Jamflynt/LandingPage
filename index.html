@@ -12,22 +12,13 @@
 </head>
 
 <body>
-    <div class="mobileNav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <section class="menuMobile">
+        <h1>Never Not Amanda</h1>
+        <a href="javascript:void(0);" class="active" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <div id="mobileLinks">
-            <a href="https://sneercampaign.com/">Sneer Campaign</a>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
-
-    <section class="menu">
         <ul id="menuLinks">
-            <li id="sneer">
+            <li class="sneer">
                 <a href="https://sneercampaign.com/">Sneer Campaign</a>
             </li>
             <li>
@@ -45,15 +36,48 @@
         </ul>
     </section>
 
-    <section class="main">
-        <div class="picture">
+    <section class="menu-fullsize">
+        <ul id="fullsize-menuLinks">
+            <li id="sneerFull">
+                <a href="https://sneercampaign.com/">Sneer Campaign</a>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="main">
+        <div class="background-image">
+            <!-- Background Image to change for mobile phone, full screen, and dark mode -->
         </div>
         <div id="title">
             <h1><span>Never</span> <span>Not</span> <span>Amanda</span></h1>
-            <h2><span>Artwork and Illustrations</span> <span>by Amanda Wood</span></h2>
-            <a href="#">Find Out More</a>
+            <h2><span>Artwork</span>  <span>Illustrations</span> <span>by Amanda Wood</span></h2>
+            <a href="#" id="main-button">Find Out More</a>
         </div>
     </section>
+
+    <p class="copyright">Floating Hat Web Design &copy; 2021 </p>
 </body>
 
+<script>
+    function myFunction() {
+  var x = document.getElementById("menuLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </html>
