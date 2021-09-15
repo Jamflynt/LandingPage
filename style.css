@@ -155,6 +155,10 @@ a:visited {
     text-align: center;
 }
 
+#hidden {
+    display: none;
+}
+
 @media (min-width: 451px) and (max-width: 768px) {
     .menu-fullsize {
         height: 10vh;
@@ -444,6 +448,10 @@ a:visited {
     .copyright {
         color: #C7BA9E;
         text-align: center;
+    }
+
+    #hidden {
+        display: none;
     }
 
  }
