@@ -14,7 +14,6 @@ html {
     height: 100vh;
     width: auto;
     display: flex;
-    justify-content: center;
 }
 
 .picture {
@@ -100,7 +99,7 @@ html {
     padding: 0 20px;
     margin: 0;
     border-left: 3px solid black;
-    transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out; 
 }
 
 .menu ul li:hover {
@@ -168,9 +167,9 @@ a:visted {
         height: auto;
     }
 
-    .fa-bars {
+    .mobileNav .icon i {
         color: black;
-        width: 50px;
+        font-size: 50px;
     }
 
     #title {
@@ -220,12 +219,26 @@ a:visted {
         display: none;
     }
 
+    .main {
+        display: flex;
+    }
+
+    .main .picture {
+        width: 100vw;
+        height: auto;
+        background-image: url(Pictures/businessCards/mysplendor_mobile.png);
+    }
+
+    .main .picture #title {
+        align-items: flex-end;
+    }
+
     #mobileLinks {
         display: none;
         }
 
     .mobileNav {
-        display: initial;
+        display: flex;
         position: absolute;
         margin: 5vw;
         z-index: 2;
@@ -233,9 +246,9 @@ a:visted {
         height: auto;
     }
 
-    .fa-bars {
+    .mobileNav .icon i {
         color: black;
-        width: 50px;
+        font-size: 50px;
     }
 }
 
@@ -307,7 +320,7 @@ a:visted {
     .menu ul li a:hover {
         color: black;
     }
-    .fa-bars {
+    .mobileNav .icon i  {
         color: white;
     }
 }
